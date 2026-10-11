@@ -5,7 +5,7 @@ Hito 1 - Introducción a React · Hito 2 - Estado de los componentes y eventos |
 ## Accesos al proyecto
 
 - Demo en vivo Hito 2 (vercel): **[pizzeriamamamiahito2react.vercel.app](https://pizzeriamamamiahito2react.vercel.app/)**
-- Demo en vivo Hito 1 (vercel): [pizzeria-mama-mia-one.vercel.app](https://pizzeria-mama-mia-one.vercel.app/)
+
 
 
 ## Descripción
