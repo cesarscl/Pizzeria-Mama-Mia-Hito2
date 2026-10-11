@@ -1,6 +1,6 @@
 # Pizzería Mamma Mia!
 
-Hito 1 - Introducción a React · Hito 2 - Estado de los componentes y eventos | Desafío Latam - Fullstack JS
+Hito 2 - Estado de los componentes y eventos | Desafío Latam - Fullstack JS
 
 ## Accesos al proyecto
 
@@ -45,7 +45,7 @@ App.jsx
 ## Cómo correr el proyecto en local
 
 ```bash
-git clone https://github.com/cesarscl/pizzeria-mamma-mia.git
+git clone https://github.com/cesarscl/pizzeria-mamma-mia-hito2.git
 cd pizzeria-mamma-mia
 npm install
 npm run dev
@@ -53,13 +53,6 @@ npm run dev
 
 Abre [http://localhost:5173](http://localhost:5173) en tu navegador.
 
-## Otros scripts
-
-```bash
-npm run build     # genera la versión de producción en /dist
-npm run preview   # sirve la build de producción localmente
-npm run lint      # revisa el código con ESLint
-```
 
 ## Requerimientos del Hito 1
 
