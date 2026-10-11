@@ -4,12 +4,15 @@ Hito 1 - Introducción a React · Hito 2 - Estado de los componentes y eventos |
 
 ## Accesos al proyecto
 
- Demo en vivo (vercel) **[pizzeria-mama-mia-one.vercel.app](https://pizzeria-mama-mia-one.vercel.app/)** |
+- Demo en vivo Hito 2 (vercel): **[pizzeriamamamiahito2react.vercel.app](https://pizzeriamamamiahito2react.vercel.app/)**
+- Demo en vivo Hito 1 (vercel): [pizzeria-mama-mia-one.vercel.app](https://pizzeria-mama-mia-one.vercel.app/)
 
 
 ## Descripción
 
 Landing page de una pizzería desarrollada con **React + Vite**. Muestra un menú de pizzas cargado mediante *props*, un navbar con estado simulado de sesión y un footer institucional.
+
+En el **Hito 2** se agregan los formularios de **registro** y **login**, manejados con el hook `useState` y el evento `onSubmit`, que validan los datos ingresados y muestran un mensaje de éxito o de error. La navegación entre Home, Login y Register se controla con un estado en `App.jsx`.
 
 ## Componentes
 
@@ -20,13 +23,17 @@ App.jsx
 │   ├── Header.jsx  → título y descripción de la pizzería
 │   └── CardPizza.jsx (x3) → nombre, precio, ingredientes e imagen (vía props)
 ├── Register.jsx    → formulario de registro con validaciones (useState)
-├── Login.jsx       → formulario de login con validaciones (useState)
 │   └── Message.jsx → alerta de éxito/error, visible solo cuando hay mensaje
+├── Login.jsx       → formulario de login con validaciones (useState)
+│   └── Message.jsx
 └── Footer.jsx      → derechos reservados
 ```
 
-- **Navbar.jsx**: botones Home y Total (siempre visibles) + Login/Register o Profile/Logout según la variable booleana `token`. El total se formatea con separador de miles usando `toLocaleString`.
+- **Navbar.jsx**: botones Home y Total (siempre visibles) + Login/Register o Profile/Logout según la variable booleana `token`. El total se formatea con separador de miles usando `toLocaleString`. Recibe la prop `onNavigate` para cambiar la vista.
 - **CardPizza.jsx**: Recibe `name`, `price`, `ingredients` e `img` por props, usado 3 veces desde `Home.jsx`.
+- **Register.jsx**: estados `email`, `password` y `confirmPassword`; valida campos obligatorios, largo mínimo de 6 caracteres y que ambas contraseñas coincidan.
+- **Login.jsx**: estados `email` y `password`; valida campos obligatorios y largo mínimo de 6 caracteres.
+- **Message.jsx**: alerta de Bootstrap (verde o roja) que solo se muestra cuando hay un mensaje.
 - **utils/helpers.js**: función `formatPrice` reutilizada en `Navbar` y `CardPizza`.
 
 ## Tecnologías
