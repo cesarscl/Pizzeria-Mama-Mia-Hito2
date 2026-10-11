@@ -1,6 +1,6 @@
 import { formatPrice } from "../utils/helpers"
 
-const Navbar = () => {
+const Navbar = ({ onNavigate }) => {
   const total = 25000
   const token = false
 
@@ -10,7 +10,7 @@ const Navbar = () => {
         <span className="navbar-brand mb-0 fw-bold">Pizzería Mamma Mia!</span>
 
         <div className="d-flex flex-wrap align-items-center gap-2">
-          <button className="btn btn-outline-light btn-sm">🍕 Home</button>
+          <button className="btn btn-outline-light btn-sm" onClick={() => onNavigate("home")}>🍕 Home</button>
 
           {token ? (
             <>
@@ -19,8 +19,8 @@ const Navbar = () => {
             </>
           ) : (
             <>
-              <button className="btn btn-outline-light btn-sm">🔐 Login</button>
-              <button className="btn btn-outline-light btn-sm">🔐 Register</button>
+              <button className="btn btn-outline-light btn-sm" onClick={() => onNavigate("login")}>🔐 Login</button>
+              <button className="btn btn-outline-light btn-sm" onClick={() => onNavigate("register")}>🔐 Register</button>
             </>
           )}
 

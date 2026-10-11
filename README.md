@@ -1,6 +1,6 @@
 # Pizzería Mamma Mia!
 
-Hito 1 - Introducción a React | Desafío Latam - Fullstack JS
+Hito 1 - Introducción a React · Hito 2 - Estado de los componentes y eventos | Desafío Latam - Fullstack JS
 
 ## Accesos al proyecto
 
@@ -19,6 +19,9 @@ App.jsx
 ├── Home.jsx
 │   ├── Header.jsx  → título y descripción de la pizzería
 │   └── CardPizza.jsx (x3) → nombre, precio, ingredientes e imagen (vía props)
+├── Register.jsx    → formulario de registro con validaciones (useState)
+├── Login.jsx       → formulario de login con validaciones (useState)
+│   └── Message.jsx → alerta de éxito/error, visible solo cuando hay mensaje
 └── Footer.jsx      → derechos reservados
 ```
 
@@ -59,6 +62,19 @@ npm run lint      # revisa el código con ESLint
 - [x] Botones Home y Total visibles independientemente del `token`
 - [x] `CardPizza.jsx` recibe nombre, precio, ingredientes e imagen por props
 - [x] `Footer.jsx` con el texto de derechos reservados
+
+## Requerimientos del Hito 2
+
+- [x] `Register.jsx` con campos Email, Contraseña y Confirmar contraseña
+  - Todos los campos obligatorios
+  - Contraseña de al menos 6 caracteres
+  - Contraseña y confirmación deben coincidir
+  - Muestra mensaje de éxito o de error al enviar
+- [x] `Login.jsx` con campos Email y Contraseña
+  - Todos los campos obligatorios
+  - Contraseña de al menos 6 caracteres
+  - Muestra mensaje de éxito o de error al enviar
+- [x] Los botones Home, Login y Register del `Navbar` cambian la vista mostrada en `App.jsx` (estado `view`)
 
 ## Autor
 
